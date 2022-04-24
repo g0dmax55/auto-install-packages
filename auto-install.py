@@ -96,6 +96,12 @@ def packages():
         print("[+] Installing Netcat")
         subprocess.call(["sudo", "apt-get", "install", "netcat", "-y"], stdout=subprocess.DEVNULL)
         bar()
+        print("[+] Installing Tor")
+        subprocess.call(["sudo", "apt-get", "install", "tor", "-y"], stdout=subprocess.DEVNULL)
+        bar()
+        print("[+] Installing Proxy-Chains")
+        subprocess.call(["sudo", "apt-get", "install", "proxychains", "-y"], stdout=subprocess.DEVNULL)
+        bar()
         time.sleep(3)
         print("[*] Finish")
 
